@@ -5,11 +5,13 @@ Simple blog using Jekyll, using the Minimalism theme. [See the Github Repo here.
 # Blog Posts
 
 **[Working on an Automated Testing Setup.](https://docs.google.com/document/d/1JNf_rxMY7UrNnkQix34awKr_We_I4zh7ElJqcFjU-Kw/pub)**
+
 _Tina Z, June 2, 2016_
  
 My project for the first week of summer is to try replicating the results for the Current Events paper, which described being able to recognize what websites were accessed based on frequency analysis of a computer’s power line, using a machine learning SVM. Initially I hoped to use old data sets to train a rudimentary machine learning SVM using the open source library libsvm, but we couldn’t find the hard drive with the right data (or the data in the right hard drive.) Seeing as a few years of PhD research data may now be lost in the void, I decided to collect power traces for each website accessed by a Raspberry Pi, computing a FFT, and formatting data sets to be recognized by the machine learning library. 
 
 **[Picking features and implementing LibSVM.](https://docs.google.com/document/d/12mLWdKFwfdn2WNTxsXAfkJl5bkwkFr72GxnQAuGq1Lk/pub)**
+
 _Tina Z, June 9, 2016_
  
 Last week I wrote a few scripts to automate collecting data on a Raspberry Pi, and now that I finished collecting data I can finally implement the machine learning algorithm that was mentioned in the previous week’s blog post. 
@@ -17,6 +19,7 @@ Last week I wrote a few scripts to automate collecting data on a Raspberry Pi, a
 Without going too much into the details, in machine learning a support vector machine can train itself to classify data, mapping the data sets to the outputs, by first analyzing a training set of data. Then, it can be used to operate on real word examples.
 
 **[Doing a basic link budget for RF transmission.](https://docs.google.com/document/d/1XYmpHfy2XEb6mxDUaHyev_ky2Ju2FJ05tbH8qmTYbEQ/pub)**
+
 _Tina Z, June 23, 2016_
  
 To ensure we have the right range and right power to transmit and receive RF, we usually do a RF link budget to make sure it’s feasible. Instead of multiplying gains and such, this is usually done by adding the logs of the gain ratios, which usually makes this process a bit easier.
