@@ -24,7 +24,20 @@ _Tina Z, June 23, 2016_
  
 To ensure we have the right range and right power to transmit and receive RF, we usually do a RF link budget to make sure it’s feasible. Instead of multiplying gains and such, this is usually done by adding the logs of the gain ratios, which usually makes this process a bit easier.
 
-### Blog Posts
+**[Reading hard drive SMART status and badblocks output.](https://docs.google.com/document/d/1XYmpHfy2XEb6mxDUaHyev_ky2Ju2FJ05tbH8qmTYbEQ/pub)**
+
+_Tina Z, June 23, 2016_
+
+A hard drive under constant acoustic interference won't be able to write to a block, so its firmware may be mislabelling the memory it tried to write as a bad sector on it SMART status. We wanted to check, with smartctl and badblocks, whether this was actually true for 4 different hard drives. (spoiler alert: some discrepancies, nothing confirmed.)
+
+**[Checking how analog voltages on digital input pins are read.](https://docs.google.com/document/d/18ObQTojR0cTgyn9_91cCYQSe1TOHkaWSz7KwzBQqrqI/pub)**
+
+_Tina Z, July 7, 2016_
+
+To make that a future setup would work for some project, this week we wanted to check whether an analog voltage could be interpreted ‘correctly’ by a digital input pin without the microprocessor being damaged or destroyed. This would definitely vary per chip/manufacturer, but we wanted a quick test to see whether peak-to-peak AC voltage, at the voltage interpreted as a digital high, would actually be seen as high. Most MCU spec sheets seem to recommend not giving the input pins less than -0.2V, so we wanted to check whether lower voltages will actually break one. Most GPIO pins have Schottky diodes around them so that negative voltage/too positive voltage would be accounted for. 
+
+
+### Blog Posts using Markdown
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
